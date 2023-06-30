@@ -1,0 +1,4 @@
+pro1.	copy file data from data.txt to data5.txt 	with php script.
+pro2.	store data5.txt data in data6.txt with 	uppercase format.
+pro3.	create new file with file operations check 	file name is exist or not if file name is 			exist give  proper error messgae 	otherwise 	write data in file.
+pro4.	create php script to store data in file if 	file is exist then data will be appended 	other wise create new file and store data
