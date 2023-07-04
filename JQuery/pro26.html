@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.4.min.js"></script>
+    <style>
+        #op{
+            background-color: brown;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn1">Fade Out</button>
+    <button id="btn2">Fade In</button>
+    <button id="btn3">Fade Toggle</button>
+    <button id="btn4">Fade To</button>
+    <h1 id="op">Welcome to Example of Events in JQuery Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti fuga laborum corrupti cupiditate placeat consectetur. Incidunt expedita quae nemo consequatur architecto ab autem vitae, accusantium impedit fugit vero, harum repellendus.</h1>
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("#op").fadeOut(2000);
+        });        
+        $("#btn2").click(function(){
+            $("#op").fadeIn(2000);
+        });        
+        $("#btn3").click(function(){
+            $("#op").fadeToggle(2000);
+        });        
+        $("#btn4").click(function(){
+            $("#op").fadeTo(2000, 0.5);
+        });
+    });
+</script>

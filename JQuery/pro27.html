@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.4.min.js"></script>
+    <style>
+        #op{
+            background-color: brown;
+            color: white;
+            padding: 20px;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn1">Run Animation</button><br>
+    <div id="op">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis expedita excepturi quos explicabo quam nesciunt blanditiis ut provident nulla esse? Sed magnam repellendus corporis deleniti similique sequi enim officia suscipit?
+    </div>
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("#op").animate({"left" : "250px"}, 2000);
+        });
+    });
+</script>

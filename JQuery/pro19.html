@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.4.min.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <input type="text" id="upass">
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $("#upass").focus(function(){
+            $(this).css({
+                "color" : "orange",
+                "padding" : "15px",
+                "border" : "1px solid black",
+                "width" : "100%"
+            });
+        });
+        $("#upass").blur(function(){
+            $(this).css({
+                "color" : "black",
+                "padding" : "0px",
+                "border" : "1px solid blue",
+                "width" : "10%"
+            });
+        });
+    });
+</script>

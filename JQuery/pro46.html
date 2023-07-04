@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.4.min.js"></script>
+    <script src="jquery.color.js"></script>
+    <style>
+        .class1{
+            background-color: brown;
+            color: white;
+            width: 250px;
+            height: 250px;
+            padding: 20px;
+            border: 10px solid black;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn1">Width / Height</button>
+    <button id="btn2">Inner Width / Inner Height</button>
+    <button id="btn3">outer Width / outer Height</button>
+    <button id="btn4">outer Width(true) / outer Height(true)</button>
+    <h1 id="op1" class="class1">Welcome to example of JQuery</h1>
+    
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            let op = $("#op1");
+            alert("Height is "+op.height()+" Width is "+op.width());
+        });
+
+        $("#btn2").click(function(){
+            let op = $("#op1");
+            alert("Height is "+op.innerHeight()+" Width is "+op.innerWidth());
+        });
+
+        $("#btn3").click(function(){
+            let op = $("#op1");
+            alert("Height is "+op.outerHeight()+" Width is "+op.outerWidth());
+        });
+
+        $("#btn4").click(function(){
+            let op = $("#op1");
+            alert("Height is "+op.outerHeight(true)+" Width is "+op.outerWidth(true));
+        });
+    });
+</script>

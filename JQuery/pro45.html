@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.4.min.js"></script>
+    <script src="jquery.color.js"></script>
+    <style>
+        .class1{
+            background-color: brown;
+            color: white;
+            padding: 20px;
+            width: 500px;
+            height: 250px;
+            position: relative;
+            left: 0px;
+            text-align: right;
+        }
+
+        .shadow{
+            box-shadow: 2px 2px 10px 2px black;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn1">Add Multiple Property</button>
+    
+    <h1 id="op1" class="class1">Welcome to example of JQuery</h1>
+    
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("#op1").css({
+                "width" : "750px",
+                "height" : "500px",
+                "border" : "2px solid blue",
+                "color" : "blue"
+            });
+        });
+    });
+</script>

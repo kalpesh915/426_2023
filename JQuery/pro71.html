@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.4.min.js"></script>
+    <script src="jquery.color.js"></script>
+    <style>
+        .demo{
+            display: block;
+            border: 2px solid purple;
+            color: black;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum sint distinctio pariatur consequatur illum aliquam eius iste. Nostrum unde possimus, magnam porro vel aspernatur odit, saepe voluptates veritatis dolorem aliquam?</p>
+    <hr>
+    <button id="btn1">Load Data</button>
+    <hr>
+    <div id="op"></div>
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("#op").load("data1.txt", function(text, response, XMLObject){
+                if(response === "success"){
+                    alert("Data Loaded");
+                }else{
+                    alert("Error while loading Data");
+                }
+            });
+        });
+    });
+</script>

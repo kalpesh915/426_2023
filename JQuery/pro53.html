@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.4.min.js"></script>
+    <script src="jquery.color.js"></script>
+    <style>
+        .ancestors *{
+            display: block;
+            border: 2px solid purple;
+            color: black;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    Body
+    <div class="ancestors">
+        Outer Div
+        <div style="width: 500px;">
+            Div (Great Grand Parent)
+            <ul>
+                UL (Grand Parent)
+                <li>
+                    LI (Parent)
+                    <span>
+                        Span
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $("div").children("ul").css({"border":"1px solid red", "color" : "Red"});
+    });
+</script>

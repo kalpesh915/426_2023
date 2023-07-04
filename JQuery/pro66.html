@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.4.min.js"></script>
+    <script src="jquery.color.js"></script>
+    <style>
+        .ancestors *{
+            display: block;
+            border: 2px solid purple;
+            color: black;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is Heading 1</h1>
+    <h1>This is Heading 2</h1>
+    <h1>This is Heading 3</h1>
+    <h1>This is Heading 4</h1>
+    <h1>This is Heading 5</h1>
+    <h1>This is Heading 6</h1>
+    <h1>This is Heading 7</h1>
+    <h1>This is Heading 8</h1>
+    <h1>This is Heading 9</h1>
+    <h1>This is Heading 10</h1>
+    <h1>This is Heading 11</h1>
+    <h1>This is Heading 12</h1>
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $("h1").eq(5).css({"color" : "Brown"});
+    });
+</script>

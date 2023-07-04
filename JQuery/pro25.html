@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.4.min.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <button id="btn1">Hide</button>
+    <button id="btn2">Show</button>
+    <button id="btn3">Toggle</button>
+    <h1 id="op">Welcome to Example of Events in JQuery</h1>
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("#op").hide(2000);
+        });        
+        $("#btn2").click(function(){
+            $("#op").show(2000);
+        });        
+        $("#btn3").click(function(){
+            $("#op").toggle(2000);
+        });        
+    });
+</script>

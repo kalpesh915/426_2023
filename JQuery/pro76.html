@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.4.min.js"></script>
+    <script src="jquery.color.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</head>
+<body>
+    <input type="search" placeholder="Search Here........" id="search" class="form-control p-4">
+    <hr>
+
+    <table class="table table-hover table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th>Roll No.</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>City</th>
+                <th>Email</th>
+                <th>Gender</th>
+            </tr>
+        </thead>
+
+        <tbody id="data">
+            <tr>
+                <td>1</td>
+                <td>Hemang</td>
+                <td>Balda</td>
+                <td>Junagadh</td>
+                <td>hemnag@gmail.com</td>
+                <td>Male</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Sunny</td>
+                <td>Sata</td>
+                <td>Rajkot</td>
+                <td>sunny@satafamily.com</td>
+                <td>Male</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Kalpesh</td>
+                <td>Kisla</td>
+                <td>Rajkot</td>
+                <td>kalpesh@gmail.com</td>
+                <td>Male</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Nikhil</td>
+                <td>Dobariya</td>
+                <td>Rajkot</td>
+                <td>nikhil@gmail.com</td>
+                <td>Male</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>Harshil</td>
+                <td>Khakhi</td>
+                <td>Rajkot</td>
+                <td>harshil@gmail.com</td>
+                <td>Male</td>
+            </tr>
+
+            <tr>
+                <td>6</td>
+                <td>Vivek</td>
+                <td>Dodiya</td>
+                <td>Rajkot</td>
+                <td>vivek@gmail.com</td>
+                <td>Male</td>
+            </tr>
+
+            <tr>
+                <td>7</td>
+                <td>Ganga</td>
+                <td>Khatri</td>
+                <td>Bhuj</td>
+                <td>ganga@gmail.com</td>
+                <td>Female</td>
+            </tr>
+
+            <tr>
+                <td>8</td>
+                <td>Priya</td>
+                <td>Rathod</td>
+                <td>Surat</td>
+                <td>priya@gmail.com</td>
+                <td>Female</td>
+            </tr>
+
+            <tr>
+                <td>9</td>
+                <td>Ashita</td>
+                <td>Gohel</td>
+                <td>Ahamdabad</td>
+                <td>ashita@gmail.com</td>
+                <td>Female</td>
+            </tr>
+
+
+            <tr>
+                <td>10</td>
+                <td>Kairvi</td>
+                <td>Parsana</td>
+                <td>Rajkot</td>
+                <td>kairvi@gmail.com</td>
+                <td>Female</td>
+            </tr>
+
+            <tr>
+                <td>11</td>
+                <td>Jigar</td>
+                <td>Vaghela</td>
+                <td>junagadh</td>
+                <td>jiagr@gmail.com</td>
+                <td>Male</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $("#search").keyup(function(){
+            let SearchText = $(this).val().toLowerCase();
+            $("#data tr").filter(function(){
+                $(this).toggle($(this).text().toLowerCase().indexOf(SearchText) > -1);
+            });
+        });
+    });
+</script>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.4.min.js"></script>
+    <script src="jquery.color.js"></script>
+    <style>
+        #op{
+            background-color: brown;
+            color: white;
+            padding: 20px;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            left: 0px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn1">Pre Append</button>
+    <button id="btn2">Append</button>
+    <h1 id="op1">Welcome to example of JQuery</h1>
+    
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("#op1").prepend("This is new text for heading");
+        });
+
+        $("#btn2").click(function(){
+            $("#op1").append("This is new text for heading");
+        });
+    });
+</script>
