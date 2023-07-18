@@ -32,6 +32,32 @@
                 return 0;
             }
         }
+
+        // function for get other users
+        public function getOtherUsers($email){
+            $sqlquery = "select * from students where email <> '$email'";
+            $result = $this->connection->query($sqlquery);
+            return $result;
+        }
+
+        // function for change password
+        public function changePassword($email, $cpass, $npass){
+            if($this->loginProcess($email, $cpass)){
+                // password update query
+                $sqlquery = "update students set password = '$npass' where email = '$email'";
+                $this->connection->query($sqlquery);
+                return 1;
+            }else{
+                return 0;
+            }
+        }
+
+        // functoin for get current user
+        public function getCurrentUser($email){
+            $sqlquery = "select * from students where email = '$email'";
+            $result = $this->connection->query($sqlquery);
+            return $result;
+        }      
     }
 
     $users = new Users();

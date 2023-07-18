@@ -43,10 +43,11 @@
 
 <?php
     if(isset($_POST["loginProcess"])){
-        $email = $_POST["email"];
-        $upass = sha1($_POST["upass"]);
-
         require_once("classes/Users.class.php");
+        $email = $users->filterData($_POST["email"]);
+        $upass = sha1($users->filterData($_POST["upass"]));
+
+        
 
         if($users->loginProcess($email, $upass)){
             $_SESSION["userlogin"] = $email;

@@ -64,13 +64,14 @@
 
 <?php
     if(isset($_POST["registerProcess"])){
-        $fname = $_POST["fname"];
-        $lname = $_POST["lname"];
-        $city = $_POST["city"];
-        $email = $_POST["email"];
-        $upass = $_POST["upass"];
-        $cupass = $_POST["cupass"];
-        $phone = $_POST["phone"];
+        require_once("classes/Users.class.php");
+        $fname = $users->filterData($_POST["fname"]);
+        $lname = $users->filterData($_POST["lname"]);
+        $city = $users->filterData($_POST["city"]);
+        $email = $users->filterData($_POST["email"]);
+        $upass = $users->filterData($_POST["upass"]);
+        $cupass = $users->filterData($_POST["cupass"]);
+        $phone = $users->filterData($_POST["phone"]);
 
         // check  password and confirm password match or not
         if($upass === $cupass){
@@ -78,7 +79,7 @@
             $upass = sha1($upass);
             //echo $upass;
 
-            require_once("classes/Users.class.php");
+            
 
             if($users->addNewUser($fname, $lname, $city, $email, $upass, $phone)){
                 $_SESSION["msg"] = "<div class='alert alert-success alert-dismissible'>
