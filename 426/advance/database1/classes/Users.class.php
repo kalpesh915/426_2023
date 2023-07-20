@@ -57,7 +57,26 @@
             $sqlquery = "select * from students where email = '$email'";
             $result = $this->connection->query($sqlquery);
             return $result;
-        }      
+        }   
+        
+        // get current profile
+        public function getProfile($email){
+            $sqlquery = "select fname, lname, city, phone from students where email = '$email'";
+            $result = $this->connection->query($sqlquery);
+            return $result;
+        }
+
+        // function for update data
+        public function updateData($email, $fname, $lname, $city, $phone){
+            $sqlquery = "update students set fname = '$fname', lname = '$lname', city = '$city', phone = '$phone' where email = '$email'";
+            $this->connection->query($sqlquery);
+        }
+
+        // function for delete data
+        public function deleteAccount($email){
+            $sqlquery = "delete from students where email = '$email'";
+            $this->connection->query($sqlquery);
+        }
     }
 
     $users = new Users();
