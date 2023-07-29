@@ -1,0 +1,17 @@
+<?php
+    require_once("Connection.class.php");
+
+    class Contactus extends Connection{
+        public function getContactus(){
+            $sqlquery = "select * from contactus where contactid = 1";
+            return $this->connection->query($sqlquery);
+        }
+
+        public function updateContact($contactperson, $phone1, $phone2, $email1, $email2, $whatsapp, $address, $googlemap){
+            $sqlquery = "update contactus set contactperson = '$contactperson', phone1 = '$phone1', phone2 = '$phone2', email1 = '$email1', email2 = '$email2', whatsapp = '$whatsapp', address = '$address', googlemap = '$googlemap' where contactid = 1";
+            $this->connection->query($sqlquery);
+        }
+    }
+
+    $contactus = new Contactus();
+?>
