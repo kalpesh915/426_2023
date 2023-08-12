@@ -49,7 +49,7 @@
                     </div>
 
                     <?php
-                    // require_once("commons/data.php");
+                        require_once("commons/data.php");
                     ?>
 
                     <!-- Content Row -->
