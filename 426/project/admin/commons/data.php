@@ -25,7 +25,7 @@
                          <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $unreadmessagecount; ?></div>
                      </div>
                      <div class="col-auto">
-                         <i class="fas fa-envelope fa-2x text-gray-300"></i>
+                         <i class="fas fa-envelope fa-2x "></i>
                      </div>
                  </div>
              </div>
@@ -45,7 +45,7 @@
                          <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $categoryCount; ?></div>
                      </div>
                      <div class="col-auto">
-                         <i class="fas fa-list fa-2x text-gray-300"></i>
+                         <i class="fas fa-list fa-2x"></i>
                      </div>
                  </div>
              </div>
@@ -70,7 +70,7 @@
                          </div>
                      </div>
                      <div class="col-auto">
-                         <i class="fas fa-box-open fa-2x text-gray-300"></i>
+                         <i class="fas fa-box-open fa-2x"></i>
                      </div>
                  </div>
              </div>
@@ -90,7 +90,7 @@
                          <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $faqCount; ?></div>
                      </div>
                      <div class="col-auto">
-                         <i class="fas fa-question fa-2x text-gray-300"></i>
+                         <i class="fas fa-question fa-2x "></i>
                      </div>
                  </div>
              </div>
@@ -110,7 +110,7 @@
                          <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $sliderCount; ?></div>
                      </div>
                      <div class="col-auto">
-                         <i class="fas fa-sliders-h fa-2x text-gray-300"></i>
+                         <i class="fas fa-sliders-h fa-2x "></i>
                      </div>
                  </div>
              </div>
@@ -130,7 +130,7 @@
                          <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $teamCount; ?></div>
                      </div>
                      <div class="col-auto">
-                         <i class="fas fa-users fa-2x text-gray-300"></i>
+                         <i class="fas fa-users fa-2x "></i>
                      </div>
                  </div>
              </div>
@@ -150,7 +150,7 @@
                          <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $serviceCount; ?></div>
                      </div>
                      <div class="col-auto">
-                         <i class="fas fa-sliders-h fa-2x text-gray-300"></i>
+                         <i class="fas fa-sliders-h fa-2x "></i>
                      </div>
                  </div>
              </div>
@@ -170,7 +170,7 @@
                          <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo $careerCount; ?></div>
                      </div>
                      <div class="col-auto">
-                         <i class="fas fa-file fa-2x text-gray-300"></i>
+                         <i class="fas fa-file fa-2x "></i>
                      </div>
                  </div>
              </div>

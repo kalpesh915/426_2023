@@ -79,32 +79,32 @@
                             ?>
                             <div class="my-2">
                                 <label for="facebook" class="form-label">Enter Facebook Link</label>
-                                <input type="url" class="form-control" name="facebook" id="facebook" required value="<?php echo $facebook; ?>">
+                                <input type="url" class="form-control" name="facebook" id="facebook"  value="<?php echo $facebook; ?>">
                             </div>
 
                             <div class="my-2">
                                 <label for="twitter" class="form-label">Enter Twitter Link</label>
-                                <input type="url" class="form-control" name="twitter" id="twitter" required value="<?php echo $twitter; ?>">
+                                <input type="url" class="form-control" name="twitter" id="twitter" value="<?php echo $twitter; ?>">
                             </div>
 
                             <div class="my-2">
                                 <label for="instagram" class="form-label">Enter Instagram Link</label>
-                                <input type="url" class="form-control" name="instagram" id="instagram" required value="<?php echo $instagram; ?>">
+                                <input type="url" class="form-control" name="instagram" id="instagram"  value="<?php echo $instagram; ?>">
                             </div>
 
                             <div class="my-2">
                                 <label for="youtube" class="form-label">Enter Youtube Link</label>
-                                <input type="url" class="form-control" name="youtube" id="youtube" required value="<?php echo $youtube; ?>">
+                                <input type="url" class="form-control" name="youtube" id="youtube" value="<?php echo $youtube; ?>">
                             </div>
 
                             <div class="my-2">
                                 <label for="linkedin" class="form-label">Enter Linkedin Link</label>
-                                <input type="url" class="form-control" name="linkedin" id="linkedin" required value="<?php echo $linkedin; ?>">
+                                <input type="url" class="form-control" name="linkedin" id="linkedin"  value="<?php echo $linkedin; ?>">
                             </div>
 
                             <div class="my-2">
                                 <label for="snapchat" class="form-label">Enter Snapchat Link</label>
-                                <input type="url" class="form-control" name="snapchat" id="snapchat" required value="<?php echo $snapchat; ?>">
+                                <input type="url" class="form-control" name="snapchat" id="snapchat"  value="<?php echo $snapchat; ?>">
                             </div>
                             <div class="my-2">
                                 <input type="submit" value="Update Social Media Link" class="btn btn-primary" name="updateProcess">

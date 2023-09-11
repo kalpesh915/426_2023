@@ -101,12 +101,12 @@
 
                             <div class="my-2">
                                 <label for="email2" class="form-label">Enter Email 2</label>
-                                <input type="email" class="form-control" name="email2" id="email2" required value="<?php echo $email2; ?>">
+                                <input type="email" class="form-control" name="email2" id="email2"  value="<?php echo $email2; ?>">
                             </div>
 
                             <div class="my-2">
                                 <label for="whatsapp" class="form-label">Enter Whatsapp Number</label>
-                                <input type="text" class="form-control" name="whatsapp" id="whatsapp" required value="<?php echo $whatsapp; ?>" pattern="\d{10,15}">
+                                <input type="text" class="form-control" name="whatsapp" id="whatsapp"  value="<?php echo $whatsapp; ?>" pattern="\d{10,15}">
                             </div>
 
                             <div class="my-2">
@@ -116,7 +116,7 @@
 
                             <div class="my-2">
                                 <label for="googlemap" class="form-label">Enter Google Map Tag</label>
-                                <textarea class="form-control" name="googlemap" id="googlemap" required style="resize:none;"><?php echo $googlemap; ?></textarea>
+                                <textarea class="form-control" name="googlemap" id="googlemap"  style="resize:none;"><?php echo $googlemap; ?></textarea>
                             </div>
 
                             <div class="my-2">

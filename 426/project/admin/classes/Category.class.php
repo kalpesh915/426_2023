@@ -10,7 +10,8 @@
             if($result->num_rows > 0){
                 return 0;
             }else{
-                $sqlquery = "insert into category (categoryname) values ('$categoryname')";
+                $classname = str_replace(" ", "-", $categoryname);
+                $sqlquery = "insert into category (categoryname, classname) values ('$categoryname', '$classname')";
                 $this->connection->query($sqlquery);
                 return 1;
             }
@@ -32,13 +33,15 @@
         }
 
         public function updateCategory($categoryid, $categoryname){
+            
             $sqlquery = "select * from category where categoryname = '$categoryname'";
             $result = $this->connection->query($sqlquery);
 
             if($result->num_rows > 0){
                 return 0;
             }else{
-                $sqlquery = "update category set categoryname = '$categoryname' where categoryid = $categoryid";
+                $classname = str_replace(" ", "-", $categoryname);
+                $sqlquery = "update category set categoryname = '$categoryname', classname = '$classname' where categoryid = $categoryid";
                 $this->connection->query($sqlquery);
                 return 1;
             }
