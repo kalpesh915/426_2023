@@ -1,0 +1,49 @@
+{
+  "students": [
+    {
+      "fname": "kairavi",
+      "lname": "parsana",
+      "id": 2
+    },
+    {
+      "fname": "priya",
+      "lname": "rathod",
+      "id": 3
+    },
+    {
+      "fname": "naisargi",
+      "lname": "sondagar",
+      "id": 4
+    },
+    {
+      "fname": "vivek",
+      "lname": "dodiya",
+      "id": 6
+    },
+    {
+      "fname": "jigar",
+      "lname": "vaghela",
+      "id": 7
+    },
+    {
+      "fname": "kalpesh",
+      "lname": "kisla",
+      "id": 8
+    },
+    {
+      "fname": "nikhil",
+      "lname": "dobariya",
+      "id": 9
+    },
+    {
+      "fname": "harshil",
+      "lname": "khakhi",
+      "id": 10
+    },
+    {
+      "fname": "ganga",
+      "lname": "khatro",
+      "id": 11
+    }
+  ]
+}
