@@ -1,0 +1,7 @@
+print("sum ", 11 + 5)
+print("sub ", 11 - 5)
+print("mul ", 11 * 5)
+print("div ", 11 / 5)
+print("mod ", 11 % 5)
+print("exp ", 2 ** 5)
+print("floor ", 11 // 5)
