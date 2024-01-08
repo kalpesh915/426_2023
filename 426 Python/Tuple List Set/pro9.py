@@ -1,0 +1,12 @@
+data = ["Rajkot", "Surat", "Baroda", "Bhuj", "Jamnagar", "Ahamdabad", "Morbi", "Rajkot"]
+print(data)
+print(data.count("Rajkot"))
+data1 = data.copy()
+print(data1)
+data.extend(["Another", "city"])
+print(data)
+print(data.index("Rajkot"))
+data.insert(0,"Bagodara")
+print(data)
+data.clear()
+print(data)

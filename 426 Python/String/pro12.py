@@ -1,0 +1,1 @@
+print("Welcome {arg1} to world of {arg2}".format(arg2="Hemang", arg1="Python"))
